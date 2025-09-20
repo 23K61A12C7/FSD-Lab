@@ -3,9 +3,20 @@
 <head>
     <title>Programming Languages</title>
     <link rel="icon" type="icon" href="/icon/laptop-icon.jpg">
+    <link rel="Stylesheet" href="/css/menu.css">
     <link rel="Stylesheet" href="/css/pl.css">
 </head>
 <body>
+                <!-- Hamburger Menu Icon and Navigation -->
+    <div class="menu-container">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <div id="menu-links" class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+
     <h1>Programming Language</h1>
     <abbr><p style="font-size: 24px;">A programming language is a formal set of rules and instructions that lets humans communicate tasks and commands to a computer, enabling the creation of software, apps, and scripts</p></abbr>
     <p> Programming Languages are two types:</p>
@@ -55,5 +66,18 @@
             <li>High & Low-Level Features – Combines advanced abstraction with direct hardware access</li>
             <li>Compiled Language – Fast execution and efficient resource use.</li> 
         </ul>
+        <script>
+            function toggleMenu() {
+             var menu = document.getElementById("menu-links");
+            if (menu.style.display === "block") 
+            {
+                menu.style.display = "none";
+            } 
+            else {
+                     menu.style.display = "block";
+                 }
+}
+</script>
+
 </body>
 </html>
