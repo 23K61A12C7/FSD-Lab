@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Dashboard</title>
+  <style>
+    /* a. Simple Selectors */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+    }
+    #main-title {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .student-name {
+      color: #e74c3c;
+    }
+    .profile-link {
+      color: #2980b9;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* b. Combinator Selectors */
+    .profile-card p {
+      font-size: 16px; /* descendant */
+    }
+    .registration-form > label {
+      display: block; /* child */
+    }
+    .notifications li + li {
+      color: #d35400; /* adjacent sibling */
+    }
+    .notifications li ~ li {
+      font-style: italic; /* general sibling */
+    }
+
+    /* c. Pseudo-class Selectors */
+    .profile-link:hover {
+      text-decoration: underline;
+    }
+    input:focus {
+      border: 2px solid #3498db;
+    }
+    .notifications li:nth-child(2) {
+      background-color: #f1c40f;
+    }
+
+    /* d. Pseudo-element Selectors */
+    .student-name::before {
+      content: "⭐ ";
+    }
+    .bio::first-letter {
+      font-size: 200%;
+      color: #8e44ad;
+    }
+    .profile-link::after {
+      content: " 🔗";
+    }
+
+    /* e. Attribute Selectors */
+    input[type="text"] {
+      background-color: #ecf0f1;
+    }
+    input[type="email"] {
+      background-color: #dff9fb;
+    }
+    a[href^="https"] {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Welcome to SASI Student Dashboard</h1>
+
+  <div class="profile-card">
+    <h2 class="student-name">Priya Sharma</h2>
+    <p class="bio">Priya is a Grade 10 student passionate about science and robotics.</p>
+    <a href="https://student-portal.com/profile" class="profile-link">View Full Profile</a>
+  </div>
+
+  <form class="registration-form">
+    <h2>📝 Registration Form</h2>
+    <label>Name: <input type="text" name="name"></label>
+    <label>Email: <input type="email" name="email"></label>
+    <label>Password: <input type="password" name="password"></label>
+    <label>Gender:
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+    </label>
+    <label>Subjects:
+      <input type="checkbox" name="subject" value="Math"> Math
+      <input type="checkbox" name="subject" value="Science"> Science
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <ul class="notifications">
+    <li>Assignment due tomorrow</li>
+    <li>Science fair registration open</li>
+    <li>Library books overdue</li>
+  </ul>
+
+</body>
+</html>
+

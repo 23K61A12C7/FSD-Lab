@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SASI College Structure</title>
+</head>
+<body>
+
+  <!-- a. Department Table with Limit Check -->
+  <h2>📊 Department-wise Student Strength</h2>
+  <table border="1" cellpadding="10" cellspacing="5">
+    <tr>
+      <th rowspan="2">Department</th>
+      <th colspan="2">Student Count</th>
+      <th rowspan="2">Total</th>
+      <th rowspan="2">Limit Status (Max: 170)</th>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+    <tr>
+      <td>Computer Science</td>
+      <td>120</td>
+      <td>80</td>
+      <td>200</td>
+      <td style="color: red;">Exceeded</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>90</td>
+      <td>70</td>
+      <td>160</td>
+      <td style="color: green;">Within Limit</td>
+    </tr>
+    <tr>
+      <td>Mechanical</td>
+      <td>150</td>
+      <td>30</td>
+      <td>180</td>
+      <td style="color: red;">Exceeded</td>
+    </tr>
+    <tr>
+      <td>Civil</td>
+      <td>100</td>
+      <td>50</td>
+      <td>150</td>
+      <td style="color: green;">Within Limit</td>
+    </tr>
+    <tr>
+      <td>Electrical</td>
+      <td>110</td>
+      <td>60</td>
+      <td>170</td>
+      <td style="color: green;">Within Limit</td>
+    </tr>
+  </table>
+
+  <!-- b. Class Timetable -->
+  <h2>📅 Weekly Class Timetable</h2>
+  <table border="1" cellpadding="10" cellspacing="5">
+    <caption><strong>Grade 10 - Timetable</strong></caption>
+    <tr>
+      <th>Day</th>
+      <th>9:00 - 10:00</th>
+      <th>10:00 - 11:00</th>
+      <th>11:00 - 12:00</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>Math</td>
+      <td rowspan="2">Physics</td>
+      <td>Chemistry</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>English</td>
+      <td>Biology</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td colspan="3" align="center">Project Work</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>Computer</td>
+      <td>Math</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>Physics</td>
+      <td>Chemistry</td>
+      <td>Games</td>
+    </tr>
+  </table>
+
+  <!-- c. Student Registration Form -->
+  <h2>📝 Student Registration Form</h2>
+  <form>
+    <table border="1" cellpadding="8">
+      <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td>Roll Number:</td>
+        <td><input type="number" name="roll"></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dob"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Subjects:</td>
+        <td>
+          <input type="checkbox" name="subject" value="Math"> Math
+          <input type="checkbox" name="subject" value="Science"> Science
+          <input type="checkbox" name="subject" value="English"> English
+        </td>
+      </tr>
+      <tr>
+        <td>Class:</td>
+        <td>
+          <select>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Comments:</td>
+        <td><textarea rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Register">
+          <input type="reset" value="Clear">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <!-- d. Frameset Layout (Note: This section must be in a separate HTML file to work properly) -->
+  <h2>🖼️ Frameset Layout (Preview)</h2>
+  <p>To view the frameset, create a separate HTML file with the following code:</p>
+  <pre>
+&lt;frameset cols="33%,33%,34%"&gt;
+  &lt;frame src="school-image.html"&gt;
+  &lt;frame src="school-info.html"&gt;
+  &lt;frame src="school-links.html"&gt;
+  &lt;noframes&gt;
+    &lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+  &lt;/noframes&gt;
+&lt;/frameset&gt;
+  </pre>
+
+</body>
+</html>
+
